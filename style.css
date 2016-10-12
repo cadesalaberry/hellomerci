@@ -1,0 +1,102 @@
+body {
+    background-color: linen; /* Met une couleur de fond */
+    margin: 0; /* Annule la marge par defaut */
+}
+
+.cover-photo {
+    width: 100%;
+    margin-bottom: -30%;
+}
+
+.zone-principale {
+    display: inline-block; /* pour que la sidebar soit a droite et pas en dessous */
+    width:60%; /* Laisse 40% de place pour la sidebar */
+    min-width: 502px;
+    margin-left: 20px;
+}
+
+.texte-principal {
+    margin-top: 31px; /* Pour ne pas grignoter sur les categories */
+    background: #fcfcfc; /* Blanc casse */
+    padding: 20px;
+}
+
+.categories {
+    text-align: center;
+    color: orange;
+    width: 100%; 
+}
+
+.categories > div {
+    width: 30%; /* 100/3 ~= 30% par categorie */
+    float: left; /* Pour que les categories soit cote a cote */
+    margin: 3px; /* Laisse un blanc entre les categories */
+    padding: 5px; /* Donne plus d'espace aux categories */
+    background-color: #fcfcfc; /* Blanc casse */
+}
+
+h3 {
+    color: orange; /* Change la couleur de "DECOUVREZ LES PROJETS"*/
+}
+
+.projet {
+    margin: 20px 0; /* Laisse de l'espace en haut et en bas des projets */
+}
+
+.image-projet {
+    display: inline-block; /* pour que la description soit a droite et pas en dessous */
+    width: 23%;
+}
+
+.description-projet {
+    display: inline-block; /* pour que la description soit a droite et pas en dessous */
+    vertical-align: top; /* Align le texte en haut plutot que en bas */
+    width: 65%;
+    font-size: 14px; /* Change la taille du texte pour que ca tienne */
+    margin: 10px;
+}
+
+
+
+
+/* ET MAINTENANT LA SIDEBAR */
+
+.sidebar-a-droite {
+    display: inline-block; /* pour que la sidebar soit a droite et pas en dessous */
+    text-align: center;
+    background: #e5b88a;
+    margin: 20px;
+    margin-top: 70px; /* Compense la tete ronde */
+    width: 250px; /* force la sidebar a avoir une taille fixe */
+}
+
+
+.tete-ronde {
+    /* C'est assez complique, mais ca permet d'avoir la tete ronde.
+   http://stackoverflow.com/questions/22577371/how-to-make-rectangular-image-appear-circular-with-css
+*/
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    
+    margin-top: -50px; /* Pour decaler la tete de la moitie de sa taille vers le haut */
+    border-width: 2px; /* rajoute une bordure a la photo */
+    border-style: solid; /* Sinon la bordure n'apparait pas */
+    border-color: #e5b88a;
+}
+
+.texte-en-haut {
+    margin: 15px;
+}
+
+.sidebar-photo {
+    width: 250px; /* Il faut que la photo ait la meme largeur que la sidebar */
+}
+
+.boite-bleue {
+    padding: 15px; /* Rajoute de l'espace autour du texte */
+    background: #41e3ea;
+    border: none;
+}
